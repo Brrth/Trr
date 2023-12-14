@@ -1,0 +1,61 @@
+{
+  "name": "CODE TERMUX GEN | بوت استخراج كود ترمكس",
+  "description": "قم بملء المتطلبات التاليه ادني 👇",
+  "logo": "https://telegra.ph/file/ad8500cdf30f629605d35.jpg",
+  "keywords": [
+    "telegram",
+    "bot",
+    "python",
+    "pyrogram"
+  ],
+    "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+  "repository": "https://github.com/AnonymousR1025/StringGenBot",
+  "env": {
+    "ENVIRONMENT": {
+      "description": "Don't change ANYTHING.",
+      "required": true,
+      "value": "ANYTHING"
+    },
+    "API_ID": {
+      "description": "API_ID | from my.telegram.org/apps.",
+      "required": true,
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "API_ID | my.telegram.org/apps.",
+      "required": true,
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "ايدي الادمن",
+      "required": true,
+      "value": ""
+    },
+    "MUST_JOIN": {
+      "description": "قناة الاشتراك الاجباري بدون @",
+      "required": true,
+      "value": ""
+    },
+    "BOT_TOKEN": {
+      "description": "توكن البوت",
+      "required": true,
+      "value": ""
+    }
+  }
+}
